@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.image-display {
+    width: 100%;
+    /* Mantém a proporção da imagem (16:9) */
+    padding-top: 56.25%; /* 9 / 16 * 100% */
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: background-image 0.3s;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./img/Transformando_Noite_em_Dia_em_Vídeo\ -\ frame\ at\ 0m7s.JPG);
+    
+    color: #111827; 
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(./img/6293645.jpg);
+        background-size: cover;
+        background-position: center;
+        color: #f3f4f6;
+
+    }
+}
