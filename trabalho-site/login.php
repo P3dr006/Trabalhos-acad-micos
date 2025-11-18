@@ -13,14 +13,20 @@
     <main class="container">
         <div>
             <form>
+                <?php 
+                if (isset($_GET['erro'])) {
+                    echo '<p style="color: red; text-align: center;">Usuário ou senha inválidos!</p>';
+                }
+                
+                ?>
                 <h1>Login Lokalli</h1>
                 <div class="input-button">
-                    <input type="email" placeholder="Usuario" id="Usuario">
+                    <input type="email" placeholder="Usuario" id="Usuario" name="Usuario">
                     <i class="bx bx-user"></i>
                 </div>
 
                 <div class="input-button">
-                    <input type="password" placeholder="Senha" id="Senha">
+                    <input type="password" placeholder="Senha" id="Senha" name="Senha">
                     <i class="bx bx-lock"></i>
                 </div>
 
